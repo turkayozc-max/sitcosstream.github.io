@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SitCo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0b0b0b;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 16px 40px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.85), rgba(0,0,0,0));
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.hero {
+    height: 70vh;
+    background: url("https://images.unsplash.com/photo-1524985069026-dd778a71c7b4") center/cover no-repeat;
+    display: flex;
+    align-items: flex-end;
+    padding: 40px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    max-width: 600px;
+}
+
+.section {
+    padding: 40px;
+}
+
+.row {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+}
+
+.card {
+    min-width: 180px;
+    height: 260px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.08);
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #888;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">SitCo</div>
+</header>
+
+<section class="hero">
+    <h1>Iconic Sitcoms.<br>Curated Comfort.</h1>
+</section>
+
+<section class="section">
+    <h2>Iconic Sitcoms</h2>
+    <div class="row">
+
+        <div class="card"
+        style="background-image:url('https://upload.wikimedia.org/wikipedia/en/d/d6/Friends_season_one_cast.jpg')"
+        onclick="window.open('https://www.youtube.com/watch?v=hDNNmeeJs1Q','_blank')"></div>
+
+        <div class="card"
+        style="background-image:url('https://upload.wikimedia.org/wikipedia/en/2/20/Seinfeld_cast.jpg')"
+        onclick="window.open('https://www.youtube.com/watch?v=l4LhXycJ7rI','_blank')"></div>
+
+        <div class="card"
+        style="background-image:url('https://upload.wikimedia.org/wikipedia/en/8/80/The_Office_US.jpg')"
+        onclick="window.open('https://www.youtube.com/watch?v=tNcDHWpselE','_blank')"></div>
+
+        <div class="card"
+        style="background-image:url('https://upload.wikimedia.org/wikipedia/en/0/0e/HIMYM_cast.jpg')"
+        onclick="window.open('https://www.youtube.com/watch?v=VwD8fP0pZx0','_blank')"></div>
+
+        <div class="card"
+        style="background-image:url('https://upload.wikimedia.org/wikipedia/en/6/69/Brooklyn_Nine-Nine_Season_1.jpg')"
+        onclick="window.open('https://www.youtube.com/watch?v=H0K5q5Q2YbQ','_blank')"></div>
+
+    </div>
+</section>
+
+<footer>
+    SitCo © 2026 — Student Project
+</footer>
+
+</body>
+</html>
